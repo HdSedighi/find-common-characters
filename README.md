@@ -2,12 +2,16 @@
 The intuition behind solving this problem is to find the characters that appear in all words of the given array. To do this, we can track the frequency of each character in every word and identify the minimum frequency for each character that appears across all words. This will help us determine the common characters including their duplicates.
 
 # Approach
+
+
 1. Initialize Frequency Array:
 
 Create an array minFreq to store the minimum frequency of each character across all words. Initialize it based on the first word.
+
 2. Update Frequencies:
 
 For each subsequent word, count the frequency of each character and update minFreq to reflect the minimum frequency found so far.
+
 3. Construct Result:
 
 Convert the minFreq array into a list of characters, including duplicates, and return it as the result.
